@@ -1,0 +1,97 @@
+/* ============================================================
+   Akhtoboot — Typography tokens
+   Display/headings + Arabic wordmark: Thmanyah Serif Display
+   Body / UI / Latin wordmark:         Thmanyah Sans (bilingual)
+   ============================================================ */
+
+/* --- Thmanyah Serif Display (display & Arabic wordmark) --- */
+@font-face {
+  font-family: 'Thmanyah';
+  src: url('../assets/fonts/thmanyahserifdisplay-Light.woff2') format('woff2');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah';
+  src: url('../assets/fonts/thmanyahserifdisplay-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah';
+  src: url('../assets/fonts/thmanyahserifdisplay-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah';
+  src: url('../assets/fonts/thmanyahserifdisplay-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah';
+  src: url('../assets/fonts/thmanyahserifdisplay-Black.woff2') format('woff2');
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+/* --- Thmanyah Sans (body, UI, Latin wordmark) --- */
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('../assets/fonts/thmanyahsans-Light.woff2') format('woff2');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('../assets/fonts/thmanyahsans-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('../assets/fonts/thmanyahsans-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('../assets/fonts/thmanyahsans-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Thmanyah Sans';
+  src: url('../assets/fonts/thmanyahsans-Black.woff2') format('woff2');
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+:root {
+  /* families */
+  --font-display: 'Thmanyah', 'Times New Roman', serif;
+  --font-body: 'Thmanyah Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Thmanyah Sans', system-ui, sans-serif; /* alias for the Latin wordmark */
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* weights */
+  --fw-light: 300; /* @kind other */
+  --fw-regular: 400; /* @kind other */
+  --fw-medium: 500; /* @kind other */
+  --fw-bold: 700; /* @kind other */
+  --fw-black: 900; /* @kind other */
+
+  /* type scale (display uses Thmanyah; rem-based) */
+  --text-display: 4.5rem;   /* 72 */
+  --text-h1: 3rem;          /* 48 */
+  --text-h2: 2.25rem;       /* 36 */
+  --text-h3: 1.625rem;      /* 26 */
+  --text-h4: 1.25rem;       /* 20 */
+  --text-lg: 1.125rem;      /* 18 */
+  --text-base: 1rem;        /* 16 */
+  --text-sm: 0.875rem;      /* 14 */
+  --text-xs: 0.75rem;       /* 12 */
+
+  /* line heights */
+  --lh-tight: 1.05; /* @kind other */
+  --lh-snug: 1.2; /* @kind other */
+  --lh-normal: 1.5; /* @kind other */
+  --lh-relaxed: 1.7; /* @kind other */
+
+  /* tracking */
+  --tracking-tight: -0.02em; /* @kind other */
+  --tracking-normal: 0; /* @kind other */
+  --tracking-wide: 0.04em; /* @kind other */
+  --tracking-caps: 0.12em; /* @kind other */
+}
