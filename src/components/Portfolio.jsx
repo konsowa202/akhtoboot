@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const works = [
-  { id: 1, title: 'بودكاست ثمانية', cat: 'تنسيق مبدعين', vid: '/reels/reel-1.mp4' },
-  { id: 2, title: 'حملة العين العزيزية', cat: 'إنتاج كامل', vid: '/reels/reel-2.mp4' },
-  { id: 3, title: 'تغطية المعرض', cat: 'فيديوهات قصيرة', vid: '/reels/reel-3.mp4' },
-  { id: 4, title: 'كواليس الاستوديو', cat: 'يوميات', vid: '/reels/reel-4.mp4' },
+  { id: 1, title: 'بودكاست ثمانية', cat: 'تنسيق مبدعين', vid: '/uploads/فيديو اخطبوط 1 (1).mp4' },
+  { id: 2, title: 'حملة العين العزيزية', cat: 'إنتاج كامل', vid: '/uploads/فيديو العين العزيزية 2(6).mp4' },
+  { id: 3, title: 'تغطية المعرض', cat: 'فيديوهات قصيرة', vid: '/uploads/تيك توك العين العزيزية 1.mp4' },
+  { id: 4, title: 'كواليس الاستوديو', cat: 'يوميات', vid: '/uploads/تلفزيون اخطبوط .mp4' },
 ];
 
 export default function Portfolio() {

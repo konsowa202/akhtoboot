@@ -14,12 +14,12 @@ function ServiceRow({ num, title, desc, tag }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <div style={{ display: 'flex', alignItems: 'baseline', gap: '24px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
         <span style={{ fontSize: '14px', color: 'rgba(255,255,255,.4)' }}>{num}</span>
-        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: 'clamp(1.8rem, 3.4vw, 2.75rem)', color: '#fff' }}>{title}</span>
-        {tag && <span style={{ background: 'var(--brand)', color: '#fff', borderRadius: '999px', padding: '4px 14px', fontSize: '12px', fontWeight: 700, alignSelf: 'center' }}>{tag}</span>}
+        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: 'clamp(1.6rem, 5vw, 2.75rem)', color: '#fff', lineHeight: 1.2 }}>{title}</span>
+        {tag && <span style={{ background: 'var(--brand)', color: '#fff', borderRadius: '999px', padding: '4px 14px', fontSize: '12px', fontWeight: 700 }}>{tag}</span>}
       </div>
-      <span style={{ fontSize: '15px', color: 'rgba(255,255,255,.55)', flex: 'none' }}>{desc}</span>
+      <span style={{ fontSize: '15px', color: 'rgba(255,255,255,.55)', flex: 'none', marginTop: '4px' }}>{desc}</span>
     </div>
   );
 }
