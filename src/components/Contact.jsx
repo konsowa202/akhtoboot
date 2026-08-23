@@ -94,8 +94,8 @@ export default function Contact({ email }) {
                   <input type="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني (اختياري)" style={{ width: '100%', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'} />
                 </div>
                 
-                <div style={{ display: 'flex', gap: '12px' }}>
-                  <div style={{ width: '90px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }} dir="ltr">
+                <div style={{ display: 'flex', gap: '12px', direction: 'ltr' }}>
+                  <div style={{ width: '90px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
                     +966
                   </div>
                   <input type="tel" name="رقم الجوال" required placeholder="رقم الجوال" dir="rtl" style={{ flex: 1, padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'} />
