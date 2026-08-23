@@ -90,21 +90,21 @@ export default function Contact({ email }) {
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px' }}>
-                  <input type="text" name="الاسم" required placeholder="الاسم الكريم" style={{ width: '100%', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'} />
-                  <input type="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني (اختياري)" style={{ width: '100%', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'} />
+                  <input type="text" name="الاسم" required placeholder="الاسم الكريم" style={{ width: '100%', boxSizing: 'border-box', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'} />
+                  <input type="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني (اختياري)" style={{ width: '100%', boxSizing: 'border-box', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'} />
                 </div>
                 
                 <div style={{ display: 'flex', gap: '12px', direction: 'ltr' }}>
-                  <div style={{ width: '90px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
+                  <div style={{ width: '90px', boxSizing: 'border-box', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
                     +966
                   </div>
-                  <input type="tel" name="رقم الجوال" required placeholder="رقم الجوال" dir="rtl" style={{ flex: 1, padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'} />
+                  <input type="tel" name="رقم الجوال" required placeholder="رقم الجوال" dir="rtl" style={{ flex: 1, boxSizing: 'border-box', minWidth: 0, padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'} />
                 </div>
                 
                 <div style={{ position: 'relative' }}>
                   <div 
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    style={{ width: '100%', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid', borderColor: dropdownOpen ? 'var(--brand)' : 'rgba(255,255,255,.1)', borderRadius: '12px', color: selectedService ? '#fff' : 'rgba(255,255,255,.5)', fontSize: '15px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center', transition: 'border 0.2s' }}
+                    style={{ width: '100%', boxSizing: 'border-box', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid', borderColor: dropdownOpen ? 'var(--brand)' : 'rgba(255,255,255,.1)', borderRadius: '12px', color: selectedService ? '#fff' : 'rgba(255,255,255,.5)', fontSize: '15px', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center', transition: 'border 0.2s' }}
                   >
                     {selectedService ? services.find(s => s.id === selectedService).label : 'نوع الخدمة المطلوبة...'}
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: dropdownOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -126,7 +126,7 @@ export default function Contact({ email }) {
                   )}
                 </div>
 
-                <textarea name="الرسالة" required placeholder="نبذة عن المشروع أو الفكرة..." rows={4} style={{ width: '100%', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', resize: 'vertical', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'}></textarea>
+                <textarea name="الرسالة" required placeholder="نبذة عن المشروع أو الفكرة..." rows={4} style={{ width: '100%', boxSizing: 'border-box', padding: '16px', background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: '12px', color: '#fff', fontSize: '15px', outline: 'none', resize: 'vertical', transition: 'border 0.2s' }} onFocus={e => e.target.style.borderColor = 'var(--brand)'} onBlur={e => e.target.style.borderColor = 'rgba(255,255,255,.1)'}></textarea>
                 
                 <button 
                   type="submit"
