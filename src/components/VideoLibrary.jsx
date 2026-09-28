@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const videos = [
-  { id: 1, title: 'بودكاست ثمانية - حلقة خاصة', src: '/reels/reel-1.mp4', cat: 'بودكاست' },
-  { id: 2, title: 'حملة العين العزيزية', src: '/uploads/فيديو العين العزيزية 2(6).mp4', cat: 'حملات إعلانية' },
-  { id: 3, title: 'تغطية المعرض العقاري', src: '/reels/reel-2.mp4', cat: 'تغطيات' },
-  { id: 4, title: 'تلفزيون أخطبوط - إعلان', src: '/uploads/تلفزيون اخطبوط .mp4', cat: 'إعلانات تلفزيونية' },
-  { id: 5, title: 'لقاء تفاعلي - تيك توك', src: '/uploads/تيك توك العين العزيزية 1.mp4', cat: 'سوشيال ميديا' },
-  { id: 6, title: 'إعلان أخطبوط 1', src: '/uploads/فيديو اخطبوط 1 (1).mp4', cat: 'إعلانات قصيرة' },
-  { id: 7, title: 'تصوير احترافي C035', src: '/uploads/A001_07201915_C035.mp4', cat: 'إنتاج سينمائي' },
+  { id: 1, title: 'سكتش', src: '/reels/reel-1.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 2, title: 'تغطية لقاءات', src: '/reels/تغطية لقاءات.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 3, title: 'خلف الكواليس', src: '/reels/خلف الكواليس.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 4, title: 'فيديو دعائي', src: '/reels/فيديو دعائي.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 5, title: 'فيديو إعلاني', src: '/reels/فيديو اعلاني.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 6, title: 'لقاء تفاعلي - تيك توك', src: '/uploads/تيك توك العين العزيزية 1.mp4', cat: 'سوشيال ميديا' },
+  { id: 7, title: 'إعلان أخطبوط 1', src: '/uploads/فيديو اخطبوط 1 (1).mp4', cat: 'إعلانات قصيرة' },
   { id: 8, title: 'كواليس الإنتاج', src: '/reels/reel-4.mp4', cat: 'يوميات' },
 ];
 
@@ -164,7 +164,7 @@ export default function VideoLibrary() {
             src={activeVideo} 
             controls 
             autoPlay 
-            style={{ maxWidth: '90%', maxHeight: '85vh', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.6)' }}
+            style={{ maxWidth: '90%', maxHeight: '85vh', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.6)', objectFit: 'contain' }}
           ></video>
         </div>
       )}

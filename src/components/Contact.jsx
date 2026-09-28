@@ -30,7 +30,7 @@ export default function Contact({ email }) {
     formData.append('_template', 'table');
 
     try {
-      const res = await fetch("https://formsubmit.co/ajax/Akhtoboot@gmail.com", {
+      const res = await fetch("https://formsubmit.co/ajax/info@akhtoboot.com", {
         method: "POST",
         body: formData
       });

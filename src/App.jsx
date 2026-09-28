@@ -36,7 +36,7 @@ function App() {
       <HowWeWork />
       <Testimonials />
       <WhyUs />
-      <Contact email="Akhtoboot@gmail.com" />
+      <Contact email="info@akhtoboot.com" />
     </div>
   );
 }

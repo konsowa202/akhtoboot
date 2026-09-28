@@ -68,25 +68,25 @@ export default function Hero({ goContact, goServices }) {
         <div className="ak-anim" style={{ display: 'flex', flexDirection: 'column', gap: '14px', animation: 'ak-scrollY 30s linear infinite' }}>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-5.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-1.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
-          <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-2.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
-          <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-3.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
+          <video autoPlay muted loop playsInline preload="auto" src="/reels/تغطية لقاءات.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
+          <video autoPlay muted loop playsInline preload="auto" src="/reels/خلف الكواليس.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
         </div>
         <div className="ak-anim" style={{ display: 'flex', flexDirection: 'column', gap: '14px', animation: 'ak-scrollY 42s linear infinite', marginTop: '-180px' }}>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-4.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
-          <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-3.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
+          <video autoPlay muted loop playsInline preload="auto" src="/reels/فيديو دعائي.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-5.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-1.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
         </div>
         <div className="ak-anim" style={{ display: 'flex', flexDirection: 'column', gap: '14px', animation: 'ak-scrollY 36s linear infinite', marginTop: '-90px' }}>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-6.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-6.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
-          <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-2.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
+          <video autoPlay muted loop playsInline preload="auto" src="/reels/فيديو اعلاني.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-4.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
         </div>
         <div className="ak-anim" style={{ display: 'flex', flexDirection: 'column', gap: '14px', animation: 'ak-scrollY 48s linear infinite', marginTop: '-240px' }}>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-5.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
-          <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-3.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
-          <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-3.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
+          <video autoPlay muted loop playsInline preload="auto" src="/reels/تغطية لقاءات.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
+          <video autoPlay muted loop playsInline preload="auto" src="/reels/خلف الكواليس.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
           <video autoPlay muted loop playsInline preload="auto" src="/reels/reel-5.mp4" style={{ width: '100%', aspectRatio: '9/15', objectFit: 'cover', borderRadius: '14px', background: 'var(--ink-800)' }}></video>
         </div>
       </div>
