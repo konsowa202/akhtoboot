@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const videos = [
   { id: 1, title: 'سكتش', src: '/reels/reel-1.mp4', cat: 'محتوى سوشال ميديا' },
-  { id: 2, title: 'تغطية لقاءات', src: '/reels/تغطية لقاءات.mp4', cat: 'محتوى سوشال ميديا' },
-  { id: 3, title: 'خلف الكواليس', src: '/reels/خلف الكواليس.mp4', cat: 'محتوى سوشال ميديا' },
-  { id: 4, title: 'فيديو دعائي', src: '/reels/فيديو دعائي.mp4', cat: 'محتوى سوشال ميديا' },
-  { id: 5, title: 'فيديو إعلاني', src: '/reels/فيديو اعلاني.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 2, title: 'تغطية لقاءات', src: '/reels/coverage.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 3, title: 'خلف الكواليس', src: '/reels/bts.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 4, title: 'فيديو دعائي', src: '/reels/promo.mp4', cat: 'محتوى سوشال ميديا' },
+  { id: 5, title: 'فيديو إعلاني', src: '/reels/ad.mp4', cat: 'محتوى سوشال ميديا' },
   { id: 6, title: 'لقاء تفاعلي - تيك توك', src: '/uploads/تيك توك العين العزيزية 1.mp4', cat: 'سوشيال ميديا' },
   { id: 7, title: 'إعلان أخطبوط 1', src: '/uploads/فيديو اخطبوط 1 (1).mp4', cat: 'إعلانات قصيرة' },
   { id: 8, title: 'كواليس الإنتاج', src: '/reels/reel-4.mp4', cat: 'يوميات' },
